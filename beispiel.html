@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beispiel Mega-Prompt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Erstellung eines Mega-Prompts für ein Konzept</h1>
+        <nav class="progress-nav">
+            <a href="index.html">S</a>
+            <a href="schritt1.html">1</a>
+            <a href="schritt2.html">2</a>
+            <a href="schritt3.html">3</a>
+            <a href="schritt4.html">4</a>
+            <a href="schritt5.html">5</a>
+            <a href="schritt6.html">6</a>
+            <a href="schritt7.html">7</a>
+            <a href="beispiel.html" class="active">B</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Beispiel Mega-Prompt</h2>
+        <p>Hier ist ein Beispiel für einen vollständigen Mega-Prompt zum Thema Konzeptentwicklung für Kindertageseinrichtungen.</p>
+        
+        
+        
+        <div class="example-box">
+            <h3>Vollständiger Mega-Prompt (Beispiel)</h3>
+            <pre id="prompt-text">**Rolle:** Du bist ein professioneller Autor für Konzepte in Kindertageseinrichtungen. Deine Hauptaufgabe ist es, das Fachpersonal in Kindergärten zu unterstützen, indem Du Konzepte strukturierst und ausformulierst, die als Grundlage für Aktivitäten in den Einrichtungen mit den Kindern dienen.
+
+**Aufgabe:** Deine Aufgabe ist es, auf Grundlage des Themas "Frühlingserwachen im Kita-Garten" ein detailliertes Konzept für eine Projektwoche zu generieren. Erstelle einen klar strukturierten Ablauf. Beleuchte dabei verschiedene Perspektiven wie pädagogische Ziele (Naturverständnis, Feinmotorik, soziale Kompetenz), naturwissenschaftliche Grundlagen (Pflanzenwachstum, Jahreszeiten), altersgerechte Aufbereitung für 4-5 jährige Kinder, benötigte Materialien, mögliche Risiken (Umgang mit Werkzeug, Allergien) und gib wichtige Hinweise zur Durchführung.
+
+**Kontext/Faktenbasis:** Die Zielgruppe sind Kinder im Alter von 4-5 Jahren in einer städtischen Kindertageseinrichtung mit Zugang zu einem kleinen Gartenbereich. Die Projektwoche soll im April stattfinden. Vorhandene Materialien sind Spaten, Gießkannen und einige Samentütchen (Sonnenblumen, Kresse). Das Budget für zusätzliche Materialien ist begrenzt (ca. 30€).
+
+**Arbeitsschritte:**
+1.  **Einleitung:** Formuliere eine kurze Einführung, die die Bedeutung des Frühlings und der Gartenarbeit für Kinder hervorhebt.
+2.  **Pädagogische Ziele:** Definiere klare Lernziele für die Projektwoche.
+3.  **Wochenplan:** Erstelle einen detaillierten Plan für 5 Tage (Montag bis Freitag) mit konkreten Aktivitäten pro Tag (z.B. Tag 1: Garten erkunden, Beete vorbereiten; Tag 2: Säen und Pflanzen; Tag 3: Insektenhotel bauen; Tag 4: Naturmaterialien sammeln und basteln; Tag 5: Abschlussfest mit Präsentation).
+4.  **Materialliste:** Liste alle benötigten Materialien auf, unterteilt nach vorhandenen und neu zu beschaffenden (inkl. geschätzter Kosten).
+5.  **Risikoanalyse & Hinweise:** Beschreibe mögliche Risiken und gib konkrete Sicherheitshinweise für den Umgang mit Werkzeugen und Pflanzen.
+6.  **Differenzierung:** Gib Anregungen, wie die Aktivitäten an unterschiedliche Entwicklungsstände angepasst werden können.
+7.  **Abschluss:** Formuliere Ideen für einen gelungenen Abschluss der Projektwoche.
+
+**Ziel/Ergebnis:** Das Ziel ist ein sofort einsetzbares, pädagogisch fundiertes und praxisnahes Konzept für eine Projektwoche zum Thema "Frühlingserwachen im Kita-Garten", das Erzieher*innen als detaillierte Anleitung dient.
+
+**Format:** Präsentiere das Konzept als strukturiertes Dokument. Verwende Überschriften für jeden Abschnitt (Einleitung, Ziele, Wochenplan etc.), nutze Aufzählungszeichen für Listen (Materialien, Aktivitäten) und formuliere klare, verständliche Handlungsanweisungen. Der Wochenplan sollte tabellarisch dargestellt werden.
+
+**Was brauchst Du noch:** Gibt es spezielle Sicherheitsvorschriften der Einrichtung bezüglich Gartenarbeit, die beachtet werden müssen? Gibt es Kinder mit bekannten Allergien (z.B. Bienenstiche, bestimmte Pflanzen)?</pre>
+            <button onclick="copyPrompt()" class="button" style="margin-top: 1rem;">Prompt kopieren</button>
+        </div>
+        <script>
+            function copyPrompt() {
+                const textToCopy = document.getElementById('prompt-text').innerText;
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    alert('Prompt kopiert!');
+                }, (err) => {
+                    console.error('Fehler beim Kopieren: ', err);
+                    alert('Fehler beim Kopieren.');
+                });
+            }
+        </script>
+        
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="schritt7.html" class="button">Zurück</a>
+            <span></span>
+        </nav>
+        <p class="footer-text">Unterrichtseinheit "Mega Prompts" – KI-gestützte Konzeptentwicklung</p>
+    </footer>
+</body>
+</html>
